@@ -17,11 +17,15 @@ class RandomArtifactController < ApplicationController
     uri = URI('https://api.vam.ac.uk/v2/museumobject/O' + random_number.to_s)
     response = Net::HTTP.get_response(uri)
 
-    if response.is_a?(Net::HTTPSuccess)
+    if response.is_a?(Net::HTTPSuccess) && image_exists?(response)
       return JSON.parse(response.body)
     else
       request_artifact
     end
+  end
+
+  def image_exists?(response)
+    !JSON.parse(response.body)["meta"]["images"].nil?
   end
 
   def parse_artifact_response(artifact_response)
@@ -30,7 +34,7 @@ class RandomArtifactController < ApplicationController
     meta = @artifact_response["meta"]
     record = @artifact_response["record"]
 
-    metadata["image_url_full"] = image(meta)
+    metadata["image_url_full"] = meta["images"]["_iiif_image"] + "full/max/0/default.jpg"
     metadata["accession_number"] = record["accessionNumber"]
     metadata["title"] = title(record)
     metadata["artist_maker"] = artist_maker(record)
@@ -40,10 +44,6 @@ class RandomArtifactController < ApplicationController
 
     metadata
   end 
-
-  def image(meta)
-    meta["images"] ? meta["images"]["_iiif_image"] + "full/max/0/default.jpg" : ""
-  end
 
   def title(record)
     record["titles"].empty? ? "" : record["titles"][0]["title"]
