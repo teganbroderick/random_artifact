@@ -1,0 +1,44 @@
+<h1>A Random Artifact</h1>
+
+<img src= <%= @artifact_metadata["image_url_full"]  %> width="30%" height="30%">
+
+<table>
+    <tr> 
+        <th> Accession Number </th>
+        <td> <%= @artifact_metadata["accession_number"] %> </td>
+    </tr>
+    <% if @artifact_metadata["title"] != "" %>
+        <tr> 
+            <th> Title </th>
+            <td> <%= @artifact_metadata["title"] %> </td>
+        </tr>
+    <% end %>
+    <% if @artifact_metadata["description"] != "" %>
+    <tr> 
+        <th> Description </th>
+        <td> <%= @artifact_metadata["description"] %> </td>
+    </tr>    
+    <% end %>
+     <tr> 
+        <th> Object Type </th>
+        <td> <%= @artifact_metadata["object_type"] %>  </td>
+    </tr>   
+    <% if @artifact_metadata["artist_maker"] != "" %> 
+        <tr> 
+            <th> Artist/Maker </th>
+            <td> <%= @artifact_metadata["artist_maker"] %>  </td>
+        </tr> 
+    <% end %>
+    <% if @artifact_metadata["date"] != "" %> 
+        <tr> 
+            <th> Date </th>
+            <td> <%= @artifact_metadata["date"] %>  </td>
+        </tr>     
+    <% end %>
+</table>
+
+<!-- <p> <%= @artifact_response %> <p>   -->
+
+
+
+

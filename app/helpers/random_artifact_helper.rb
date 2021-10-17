@@ -1,0 +1,2 @@
+module RandomArtifactHelper
+end
