@@ -1,5 +1,5 @@
 # A Random Artifact
-This app shares information about random artifacts from the [Victoria and Albert Museum](https://www.vam.ac.uk). A user can view information in a web browser, or text a phone number to recieve information via sms.
+This app shares information about random artifacts from the [Victoria and Albert Museum](https://www.vam.ac.uk). A user can view information in a web browser, or text a phone number to receive information via sms.
 
 ## Tech Stack
 Ruby, Ruby on Rails, HTML, CSS, Bootstrap <br>
@@ -22,7 +22,7 @@ rails server
 Navigate to http://localhost:3000/ in your browser to view the app.
 
 #### SMS Feature <br>
-Set up a Twilio account and configure your Twilio number. Follow the steps in [this turorial](https://www.twilio.com/blog/2016/04/receive-and-reply-to-sms-in-rails.html) to add your credentials to `credentials.yml.enc` and set up `ngrok`. You should now be able to text your Twilio number and recieve artifact information on your phone when the rails server is running.
+Set up a Twilio account and configure your Twilio number. Follow the steps in [this tutorial](https://www.twilio.com/blog/2016/04/receive-and-reply-to-sms-in-rails.html) to add your credentials to `credentials.yml.enc` and set up `ngrok`. You should now be able to text your Twilio number and receive artifact information on your phone when the rails server is running.
 
 ## Features
 #### Web Application <br>
@@ -30,7 +30,7 @@ The index page displays information about a random artifact from the V&A Museum 
 ![random_artifacts3_trimmed](https://user-images.githubusercontent.com/31426739/137669782-534ebd73-501d-4c83-8f1a-28527554d073.gif)
 
 #### SMS Feature <br>
-A user can text a phone number to recieve information about a random artifact via sms. A different random artifact is sent each time.<br>
+A user can text a phone number to receive information about a random artifact via sms. A different random artifact is sent each time.<br>
 <img src="https://user-images.githubusercontent.com/31426739/137668558-8051f97a-25b2-4457-970a-0ed185ab3a67.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="40%" height="40%" />
 
 ## About This Project
