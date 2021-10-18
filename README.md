@@ -11,15 +11,15 @@ Clone or fork repository:
 ```
 $ git clone https://github.com/teganbroderick/random_artifact.git
 ```
-Change directories
+Change directories:
 ```
 cd random_artifact
 ```
-Start the server
+Start the server:
 ```
 rails server
 ```
-Navigate to http://localhost:3000/ in your browser to view the app
+Navigate to http://localhost:3000/ in your browser to view the app.
 
 #### SMS Feature <br>
 Set up a Twilio account and configure your Twilio number. Follow the steps in [this turorial](https://www.twilio.com/blog/2016/04/receive-and-reply-to-sms-in-rails.html) to add your credentials to `credentials.yml.enc` and set up `ngrok`. You should now be able to text your Twilio number and recieve artifact information on your phone when the rails server is running.
@@ -34,4 +34,4 @@ A user can text a phone number to recieve information about a random artifact vi
 <img src="https://user-images.githubusercontent.com/31426739/137668558-8051f97a-25b2-4457-970a-0ed185ab3a67.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="40%" height="40%" />
 
 ## About This Project
-I made this in October 2021 to explore museum collection APIs and learn more about the Twilio API. I worked in museums for a decade before becoming a software engineer, and I wanted to build something that could surface information about collection items. I haven't visited a museum since the pandemic started, and I miss seeing random artifacts in person.
+I made this in October, 2021 to explore museum collection APIs and learn more about Twilio APIs. I worked in museums for a decade before becoming a software engineer, and I wanted to build something that could surface information about collection items. I haven't visited a museum since the pandemic started, and I miss seeing random artifacts in person.
