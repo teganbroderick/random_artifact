@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
-  root "random_artifact#index"
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  get "/random_artifact", to: "random_artifact#index"
-
-  resource :messages do
-    collection do
-      post 'reply'
-    end
-  end
+  # Defines the root path route ("/")
+  # root "articles#index"
 end
