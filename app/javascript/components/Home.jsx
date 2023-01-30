@@ -25,16 +25,55 @@ const RandomArtifact = () => {
 
 
   return (
-    <div>
-      <h1>A Random Artifact v2.0</h1>
-
-      <p>Title: {artifact.title}</p>
-      <p>Artist: {artifact.artist_maker}</p>
-      <p>Accession: {artifact.accession_number}</p>
-      <p>Description: {artifact.description}</p>
-      <p>Type: {artifact.object_type}</p>
-      <p>Date: {artifact.date}</p>
-      <img src={artifact.image_url_full} />
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <h1>A Random Artifact</h1>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
+          <img 
+            src={artifact.image_url_full}
+            width={500}
+          />
+        </div>
+        <div className="col">
+          <table className="table">
+            <tbody>
+              <tr> 
+                <th> Accession Number </th>
+                <td> {artifact.accession_number} </td>
+              </tr>
+              <tr> 
+                <th> Title </th>
+                <td> {artifact.title} </td>
+              </tr>
+              <tr> 
+                <th> Description </th>
+                <td> {artifact.description}</td>
+              </tr>    
+               <tr> 
+                  <th> Object Type </th>
+                  <td> {artifact.object_type} </td>
+              </tr>   
+              <tr> 
+                  <th> Artist/Maker </th>
+                  <td> {artifact.artist_maker}  </td>
+              </tr> 
+              <tr> 
+                <th> Date </th>
+                <td> {artifact.date} </td>
+              </tr>  
+            </tbody>   
+          </table>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
+          <p></p>
+        </div>
+      </div>
     </div>
   )
 };
