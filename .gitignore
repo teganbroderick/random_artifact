@@ -1,3 +1,4 @@
 *.log
 tmp/cache/*
 app/assets/builds/*
+.yarn/cache/*
