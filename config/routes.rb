@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
+  root 'homepage#index'
+
   namespace :api do
     namespace :v1 do
       get 'random_artifact/index'
     end
   end
-  root 'homepage#index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  
+  resource :messages do
+    collection do
+      post 'reply'
+    end
+  end
 end
