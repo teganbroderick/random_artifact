@@ -21,7 +21,7 @@ yarn install
 ```
 Start the server:
 ```
-rails server
+bin/dev
 ```
 Navigate to http://localhost:3000/ in your browser to view the app.
 
