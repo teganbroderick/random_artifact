@@ -1,2 +1,46 @@
-@import 'bootstrap/scss/bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons';
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 30px;
+}
+
+.artifact_data {
+  overflow: hidden;
+}
+
+.artifact_image {
+  float: left;
+  padding-right: 20px;
+}
+
+.artifact_data_table {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+} 
+
+tr {
+  border-bottom: 1px solid #D8D8D8;
+  height: 40px;
+}
+
+footer {
+    text-align: center;
+    bottom:0;
+    width: 100%;
+    height: 30px;
+    position:absolute;
+    font-size: 0.75em;
+}

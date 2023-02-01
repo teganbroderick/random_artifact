@@ -25,14 +25,15 @@ const ArtifactData = () => {
 
 
   return (
-    <div className="container">
-      <div className="col">
+    <div className="artifact_data">
+      <div className="artifact_image">
         <img 
           src={artifact.image_url_full}
+          alt="artifact image"
           width={500}
         />
       </div>
-      <div className="col">
+      <div className="artifact_data_table">
         <table className="table">
           <tbody>
             <tr> 
@@ -61,11 +62,6 @@ const ArtifactData = () => {
             </tr>  
           </tbody>   
         </table>
-      </div>
-      <div className="row">
-        <div className="col">
-          <p></p>
-        </div>
       </div>
     </div>
   )

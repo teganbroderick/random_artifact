@@ -2,7 +2,9 @@ import React from "react";
 
 const Header = () => {
 	return (
-    <h1>A Random Artifact</h1>
+		<div className="header">
+    	<h1>A Random Artifact</h1>
+    </div>
 	)
 }
 

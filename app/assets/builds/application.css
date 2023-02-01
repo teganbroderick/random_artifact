@@ -1,17 +1,43 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import 'bootstrap/scss/bootstrap';
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   app/assets/stylesheets/application.bootstrap.scss 1:9  root stylesheet */
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  position: relative;
+  padding-bottom: 20px;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
+body::after {
+  content: "";
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import 'bootstrap/scss/bootstrap';\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   app/assets/stylesheets/application.bootstrap.scss 1:9  root stylesheet";
+  height: 30px;
+}
+
+.artifact_data {
+  overflow: hidden;
+}
+
+.artifact_image {
+  float: left;
+  padding-right: 20px;
+}
+
+.artifact_data_table {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #D8D8D8;
+  height: 40px;
+}
+
+footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  font-size: 0.75em;
 }
