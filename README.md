@@ -15,6 +15,10 @@ Change directories:
 ```
 cd random_artifact
 ```
+Install dependencies:
+```
+yarn install
+```
 Start the server:
 ```
 rails server
@@ -36,4 +40,4 @@ A user can text a phone number to receive information about a random artifact vi
 ## About This Project
 I made this in October, 2021 to explore museum collection APIs and learn more about Twilio APIs. I worked in museums for a decade before becoming a software engineer, and I wanted to build something that could surface information about collection items. I haven't visited a museum since the pandemic started, and I miss seeing random artifacts in person.<br>
 
-The app was rebuilt in January 2023 using React on the frontend.
+The app was rebuilt in January, 2023 using Rails 7, esbuild, and React on the frontend.
